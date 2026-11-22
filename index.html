@@ -1,0 +1,218 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>For Dardar ♡</title>
+<style>
+:root {
+  --cream: #f7f2e9;
+  --white: #fffdf8;
+  --brown: #39352f;
+  --muted: #82796d;
+  --rose: #b77d70;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--brown);
+  font-family: Georgia, serif;
+  line-height: 1.8;
+}
+nav {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  font: 12px Arial;
+  letter-spacing: 2px;
+}
+nav a { color: var(--muted); text-decoration: none; }
+.hero {
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 30px 20px;
+}
+.hero-content { animation: appear 1.5s ease; }
+.small {
+  letter-spacing: 4px;
+  color: var(--rose);
+  font: 11px Arial;
+}
+h1 {
+  font-size: clamp(48px, 12vw, 85px);
+  line-height: 1.1;
+  font-weight: normal;
+}
+h2 { font-size: 35px; font-weight: normal; }
+p { color: var(--muted); }
+button, .button {
+  padding: 13px 25px;
+  border: 1px solid var(--rose);
+  border-radius: 30px;
+  background: transparent;
+  color: var(--rose);
+  cursor: pointer;
+  text-decoration: none;
+}
+button:hover, .button:hover {
+  background: var(--rose);
+  color: white;
+}
+section {
+  padding: 75px 22px;
+  max-width: 850px;
+  margin: auto;
+  text-align: center;
+}
+.line {
+  width: 50px;
+  height: 1px;
+  background: var(--rose);
+  margin: 25px auto;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 30px;
+}
+.gallery img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+.letter {
+  background: var(--white);
+  padding: 35px 25px;
+  text-align: left;
+  border: 1px solid #e9dfd2;
+}
+.reasons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.reason {
+  background: var(--white);
+  padding: 20px 10px;
+  border: 1px solid #e9dfd2;
+}
+.reason span { color: var(--rose); }
+#secret {
+  display: none;
+  margin-top: 25px;
+  animation: appear 1s ease;
+}
+#secret.show { display: block; }
+footer {
+  text-align: center;
+  padding: 40px 15px;
+  color: var(--muted);
+}
+@keyframes appear {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@media(max-width:500px) {
+  .gallery img { height: 165px; }
+  .reasons { grid-template-columns: 1fr; }
+}
+@media(prefers-reduced-motion:reduce) {
+  *, *::before, *::after {
+    animation: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <span>FOR DARDAR ♡</span>
+  <a href="#letter">A LETTER</a>
+</nav>
+
+<header class="hero">
+  <div class="hero-content">
+    <div class="small">A SPECIAL DAY</div>
+    <h1>Happy birthday,<br><i>Dardar.</i></h1>
+    <p>A little something made just for you.</p>
+    <br>
+    <a class="button" href="#memories">Explore your surprise ♡</a>
+  </div>
+</header>
+
+<section id="memories">
+  <div class="small">01 — OUR MEMORIES</div>
+  <h2>Little moments, forever memories.</h2>
+  <p>Some of my favourite moments have you in them.</p>
+  <div class="gallery">
+    <img src="photo1.jpg" alt="Our memory one">
+    <img src="photo2.jpg" alt="Our memory two">
+    <img src="photo3.jpg" alt="Our memory three">
+    <img src="photo4.jpg" alt="Our memory four">
+  </div>
+</section>
+
+<section>
+  <div class="small">02 — A FEW REASONS</div>
+  <h2>Things I love about you.</h2>
+  <div class="reasons">
+    <div class="reason"><span>01 ♡</span><br>Your smile.</div>
+    <div class="reason"><span>02 ♡</span><br>Your little habits.</div>
+    <div class="reason"><span>03 ♡</span><br>Your beautiful heart.</div>
+    <div class="reason"><span>04 ♡</span><br>The way you make me happy.</div>
+    <div class="reason"><span>05 ♡</span><br>Our little memories.</div>
+    <div class="reason"><span>06 ♡</span><br>Simply being you.</div>
+  </div>
+</section>
+
+<section id="letter">
+  <div class="small">03 — FROM ME TO YOU</div>
+  <h2>A letter for my Dardar.</h2>
+  <div class="line"></div>
+  <div class="letter">
+    <p>My Dardar,</p>
+    <p>Happy birthday, my love. I hope today reminds you of how special you are and how much you deserve to be appreciated.</p>
+    <p>I'm so grateful for every conversation, every laugh, every little moment and every memory we've made. Even the simplest moments become meaningful because I get to share them with you.</p>
+    <p>I hope this new chapter brings you happiness, peace, success and everything your heart wishes for. I hope you never forget how wonderful you are.</p>
+    <p>Thank you for being you. I look forward to making so many more memories with you.</p>
+    <p>With all my love,</p>
+    <p><i>Yours ♡</i></p>
+  </div>
+</section>
+
+<section>
+  <div class="small">04 — ONE LAST SURPRISE</div>
+  <h2>Something just for you.</h2>
+  <p>There's one more thing I want you to see...</p>
+  <button onclick="openSurprise()">Open your surprise ♡</button>
+  <div id="secret">
+    <div style="font-size:45px;color:#b77d70">♡</div>
+    <h2>You are so loved.</h2>
+    <p>Of all the people in this world, I'm really glad our paths crossed. Happy birthday, Dardar. Here's to more smiles, adventures and memories together.</p>
+    <p>And remember, this little website is yours. Forever a little reminder of how special you are to me.</p>
+  </div>
+</section>
+
+<footer>
+  Made with love, especially for Dardar ♡
+  <br>Always a special person.
+</footer>
+
+<script>
+function openSurprise() {
+  const secret = document.getElementById("secret");
+  secret.classList.toggle("show");
+}
+</script>
+
+</body>
+</html>
